@@ -4,11 +4,9 @@ import { Component } from '@angular/core';
   selector: 'pm-root',
   template: `
   <div style="text-align:center">
-    <h1>
-      {{pageTitle}}
-    </h1>
-    ... Starter Files ...
-</div>
+    <h1>{{pageTitle}}</h1>
+    <pm-products></pm-products>
+  </div>
 
   `
 })

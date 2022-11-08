@@ -1,0 +1,24 @@
+<div>
+  <h2>{{pageTitle}}</h2>
+</div>
+<table style="margin: 0 auto" *ngIf='products.length'>
+  <thead>
+    <tr style="padding: 0 10px">
+      <th>Product</th>
+      <th>Code</th>
+      <th>Available</th>
+      <th>Price</th>
+      <th>Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{product.productName}}</td>
+      <td>{{product.productCode}}</td>
+      <td>{{product.releaseDate}}</td>
+      <td>{{product.price}}</td>
+      <td>{{product.starRating}}</td>
+    </tr>
+  </tbody>
+</table>
+
